@@ -1,0 +1,42 @@
+#section-b {
+  display: grid;
+  grid-gap: 15px;
+  padding: 0;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: 'feed';
+}
+
+#section-b #feed article {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  grid-template-areas:
+    '. title title .'
+    '. content content .'
+    '. link date .';
+}
+
+#section-b #feed article:nth-child(odd) {
+  background: #191b28;
+}
+#section-b #feed article h1 {
+  grid-area: title;
+}
+
+#section-b #feed article p {
+  grid-area: content;
+}
+
+#section-b #feed article a {
+  grid-area: link;
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+#section-b #feed article strong {
+  grid-area: date;
+}
