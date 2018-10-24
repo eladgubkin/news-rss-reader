@@ -5,82 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-    crossorigin="anonymous">
   <link rel="shortcut icon" href="/img/icons/favicon.png" type="image/png">
+
   <!-- CSS Styles-->
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <!--/ End fontawesome -->
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!--/ End Animate.css-->
+
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/top-container.css">
-  <link rel="stylesheet" href="css/design.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/btns.css">
   <link rel="stylesheet" href="css/feed.css">
   <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="css/footer.css">
   <!--/ End CSS Styles-->
-  <title>News Web Page</title>
+  <title>News-RSS-Reader</title>
 </head>
 
 <body>
   <!-- Top Container -->
-  <section class="top-container">
-    <div class="showcase">
+  <header id="header" class="animated fadeIn">
+    <div id="title">
+      <h4>Welcome To</h4>
       <h1>The Awesome News Website</h1>
-      <p>Go ahead and select your favorite news website</p>
     </div>
-  </section>
+    <strong>
+      <a href="https://github.com/eladgubkin/news-rss-reader" target="_blank"><span>GitHub </span><i class="fas fa-external-link-alt"></i>
+      </a>
+    </strong>
+  </header>
   <!--/ End Top Container -->
 
-  <!-- Main Wrapper -->
-  <div id="wrapper">
-    <!-- Section A -->
-    <section id="section-a">
-      <div class="english">
-        <h4>English News</h4>
-        <ul class="list">
-          <li><a onclick="google.setOnLoadCallback(rssReader(bbc, 'BBC'))">BBC News</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(cnn, 'CNN'))">CNN News</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(abc, 'ABC News'))">ABC News</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(nyc, 'New York Times'))">New York Times</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(jpost, 'The Jerusalem Post'))">The Jerusalem Post</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(fox, 'FOX News'))">Fox News</a></li>
-        </ul>
-      </div>
-      <div class="hebrew">
-        <h4>Hebrew News</h4>
-        <ul class="list">
-          <li><a onclick="google.setOnLoadCallback(rssReader(ynet, 'ynet'))">ynet</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(walla, 'Walla'))">Walla</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(mako, 'Mako'))">Mako</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(israelHayom, 'Israel Hayom'))">Israel Hayom</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(timesOfIsrael, 'Times of Israel'))">Times of Israel</a></li>
-          <li><a onclick="google.setOnLoadCallback(rssReader(haaretz, 'Haaretz'))">Haaretz</a></li>
-        </ul>
-      </div>
-    </section>
-    <!--/ End Section A -->
-
-    <!-- Section B -->
-    <section id="section-b">
-      <div id="feed"></div>
-    </section>
-    <!--/ End Section B -->
-
-  </div>
-  <!--/ End Main Wrapper -->
-
-  <!-- Footer -->
-  <footer id="footer">
+  <!-- Section A -->
+  <section class="
+      animated fadeIn" id="section-a">
+    <p>Go ahead and select your favorite news source to get your news! <i class="
+            fas fa-newspaper"></i></p>
     <ul>
-      <li><a href="http://twitter.com/eladgubkin"><i class="fab fa-twitter"></i> twitter.com/eladgubkin</a></li>
-      <li><a href="https://linkedin.com/in/eladgubkin/"><i class="fab fa-linkedin"></i> linkedin.com/eladgubkin</a>
-      </li>
-      <li><a href="http://github.com/eladgubkin"><i class="fab fa-github"></i> github.com/eladgubkin</a>
-      </li>
-      <li id="credit">&copy; Elad Gubkin 2018</li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(bbc, 'BBC'))">BBC News</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(cnn, 'CNN'))">CNN News</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(abc, 'ABC News'))">ABC News</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(nyc, 'New York Times'))">New York Times</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(jpost, 'Jerusalem Post'))">Jerusalem Post</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(fox, 'FOX News'))">Fox News</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(ynet, 'ynet'))">ynet</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(walla, 'Walla'))">Walla</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(mako, 'Mako'))">Mako</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(israelHayom, 'Israel Hayom'))">Israel Hayom</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(timesOfIsrael, 'Times of Israel'))">Times of
+          Israel</a></li>
+      <li><a class="btn" onclick="google.setOnLoadCallback(rssReader(nana10, 'Nana 10'))">Nana 10</a></li>
     </ul>
-  </footer>
-  <!--/ End Footer -->
+  </section>
+  <!--/ End Section A -->
+
+  <!-- Section B -->
+  <section id="section-b">
+    <div id="feed"></div>
+  </section>
+  <!--/ End Section B -->
 
   <!-- JS Scripts -->
+  <script src=""></script>
   <script src="https://rss2json.com/gfapi.js"></script>
   <script src="js/main.js"></script>
   <!--/ End JS Scripts-->

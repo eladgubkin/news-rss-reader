@@ -1,0 +1,39 @@
+#header {
+  background: #191b28;
+  border-bottom: 1px #000000 solid;
+  height: 175px;
+  color: #ddd;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 15% repeat(2, minmax(auto, 35%)) 15%;
+  grid-template-areas: '. title title link';
+}
+
+#header h4 {
+  margin: 0;
+}
+#header #title {
+  grid-area: title;
+  margin-top: 30px;
+}
+
+#header strong {
+  grid-area: link;
+  margin-top: 30px;
+}
+#header h1 {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 31px;
+}
+
+#header strong a {
+  text-decoration: none;
+  color: #5a5a5c;
+}
+
+#header strong a span {
+  color: #1da1f2;
+}

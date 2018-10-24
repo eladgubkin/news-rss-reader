@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
 }
 
 body {
@@ -13,11 +12,4 @@ body {
 
 img {
   max-width: 100%;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 1em 0;
 }

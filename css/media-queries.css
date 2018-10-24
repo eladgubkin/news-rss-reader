@@ -1,107 +1,95 @@
 /* Media Queries */
 
 @media (max-width: 800px) {
-  .top-container {
-    grid-template-areas: 'showcase showcase';
+  .btn {
+    font-size: 16px;
   }
 
-  .showcase h1 {
-    font-size: 1.8rem;
+  #feed article h1 {
+    font-size: 19px;
   }
 
-  .showcase p {
-    font-size: 1.1rem;
+  #feed article p {
+    font-size: 14px;
   }
-  .showcase p a {
-    font-size: 1.1rem;
+
+  #feed article a {
+    font-size: 14px;
+  }
+
+  #feed article strong {
+    font-size: 14px;
   }
 }
 
-@media (max-width: 1070px) {
-  #section-a {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'english'
-      'hebrew';
-  }
-  #section-a .english {
-    margin: 0;
-  }
-
-  #section-a .hebrew {
-    margin: 0;
-  }
-
-  #section-a .english ul,
-  #section-a .hebrew ul {
-    grid-template-columns: 1fr;
-  }
-
-  #section-b {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'english'
-      'hebrew';
-  }
-
-  #section-b #english {
-    margin: 0;
-  }
-
-  #section-b #hebrew {
-    margin: 0;
-  }
-
-  .article {
+@media (max-width: 850px) {
+  #header {
     grid-template-columns: 1fr;
     grid-template-areas:
       'title'
-      'content'
-      'link'
-      'date';
+      'link';
   }
 
-  .article .title {
-    font-size: 1rem;
-  }
-
-  .article .content {
-    font-size: 0.8rem;
-  }
-
-  .article .link {
-    font-size: 0.9rem;
-  }
-
-  .article .date {
-    font-size: 0.9rem;
+  #header strong {
+    margin: 0;
+    padding: 5px;
   }
 }
 
 @media (max-width: 450px) {
-  #section-a .english .list,
-  #section-a .hebrew .list {
-    grid-template-columns: 1fr;
+  #header h4 {
+    font-size: 12px;
   }
-
-  #footer ul li img {
-    width: 10px;
-    height: 10px;
+  #header h1 {
+    font-size: 25px;
   }
-
-  #footer ul li a {
-    font-size: 1rem;
+  #header strong a span {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 1070px) {
-  .article {
+  article {
     grid-auto-rows: auto;
   }
 }
 
-@media (max-width: 1400px) {
-  #wrapper {
-    padding: 0 0;
+@media (max-width: 560px) {
+  #section-a ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .btn {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 340px) {
+  .btn {
+    padding: 3px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 306px) {
+  .btn {
+    padding: 3px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 289px) {
+  .btn {
+    padding: 2px;
+    font-size: 10px;
   }
 }

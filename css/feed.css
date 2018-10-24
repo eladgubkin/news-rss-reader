@@ -6,6 +6,13 @@
   grid-template-areas: 'feed';
 }
 
+#section-b #feed article:first-child {
+  border-top: 1px #000000 solid;
+}
+#section-b #feed article:not(:last-child) {
+  border-bottom: 1px #000000 solid;
+}
+
 #section-b #feed article {
   text-align: center;
   color: #fff;
@@ -13,7 +20,7 @@
   padding: 15px;
   height: fit-content;
   display: grid;
-  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
   grid-template-areas:
     '. title title .'
     '. content content .'
@@ -31,12 +38,18 @@
   grid-area: content;
 }
 
-#section-b #feed article a {
+#section-b #feed article strong {
   grid-area: link;
   text-decoration: none;
   color: #1da1f2;
+  font-weight: normal;
 }
 
-#section-b #feed article strong {
+#section-b #feed article time {
   grid-area: date;
+}
+
+#section-b #feed article strong a {
+  text-decoration: none;
+  color: #1da1f2;
 }
