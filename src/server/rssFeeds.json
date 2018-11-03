@@ -1,0 +1,86 @@
+[
+  {
+    "bbc": {
+      "websiteName": "BBC News",
+      "hostname": "feeds.bbci.co.uk",
+      "path": "/news/world/rss.xml"
+    }
+  },
+  {
+    "cnn": {
+      "websiteName": "CNN News",
+      "hostname": "rss.cnn.com",
+      "path": "/rss/edition.rss"
+    }
+  },
+  {
+    "abc": {
+      "websiteName": "ABC News",
+      "hostname": "abcnews.go.com",
+      "path": "/abcnews/topstories"
+    }
+  },
+  {
+    "nytimes": {
+      "websiteName": "New York Times",
+      "hostname": "rss.nytimes.com",
+      "path": "/services/xml/rss/nyt/HomePage.xml"
+    }
+  },
+  {
+    "jpost": {
+      "websiteName": "Jerusalem Post",
+      "hostname": "www.jpost.com",
+      "path": "/Rss/RssFeedsFrontPage.aspx"
+    }
+  },
+  {
+    "fox": {
+      "websiteName": "Fox News",
+      "hostname": "feeds.foxnews.com",
+      "path": "/foxnews/latest"
+    }
+  },
+  {
+    "ynet": {
+      "websiteName": "ynet",
+      "hostname": "www.ynet.co.il",
+      "path": "/Integration/StoryRss2.xml"
+    }
+  },
+  {
+    "walla": {
+      "websiteName": "Walla",
+      "hostname": "rss.walla.co.il",
+      "path": "/feed/1?type=main"
+    }
+  },
+  {
+    "mako": {
+      "websiteName": "Mako",
+      "hostname": "rcs.mako.co.il",
+      "path": "/rss/news-military.xml"
+    }
+  },
+  {
+    "israelHayom": {
+      "websiteName": "Israel Hayom",
+      "hostname": "www.israelhayom.co.il",
+      "path": "/rss.xml"
+    }
+  },
+  {
+    "timesOfIsrael": {
+      "websiteName": "Times of Israel",
+      "hostname": "www.timesofisrael.com",
+      "path": "/feed/"
+    }
+  },
+  {
+    "nana10": {
+      "websiteName": "Nana 10",
+      "hostname": "rss.nana10.co.il",
+      "path": "/?s=127"
+    }
+  }
+]

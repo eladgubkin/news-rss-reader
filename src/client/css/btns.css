@@ -18,13 +18,14 @@
 }
 
 #section-a ul li {
+  background: #1e2130;
   padding: 5px;
 }
 
 .btn {
   position: relative;
   display: block;
-  color: #fff;
+  color: #ddd;
   font-size: 19px;
   font-family: sans-serif;
   text-decoration: none;

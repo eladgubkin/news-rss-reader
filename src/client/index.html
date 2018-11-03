@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+
+  <!-- CSS Styles-->
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/btns.css">
+  <link rel="stylesheet" href="css/feed.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <!--/ End CSS Styles-->
+  <title>News-RSS-Reader</title>
+</head>
+
+<body>
+  <!-- Top Container -->
+  <header id="header" class="animated fadeIn">
+    <div id="title">
+      <h4>Welcome To</h4>
+      <h1>The Awesome News Website</h1>
+    </div>
+    <strong>
+      <a href="https://github.com/eladgubkin/news-rss-reader" target="_blank"><span>GitHub </span><i class="fas fa-external-link-alt"></i>
+      </a>
+    </strong>
+  </header>
+  <!--/ End Top Container -->
+
+  <!-- Section A -->
+  <section class="animated fadeIn" id="section-a">
+    <p>Go ahead and select your favorite news source to get your news!<i class="fas fa-newspaper"></i></p>
+    <ul>
+      <li><a id="bbc" onclick="post(this.id, 0)" class="btn">BBC News</a></li>
+      <li><a id="cnn" onclick="post(this.id, 1)" class="btn">CNN News</a></li>
+      <li><a id="abc" onclick="post(this.id, 2)" class="btn">ABC News</a></li>
+      <li><a id="nytimes" onclick="post(this.id, 3)" class="btn">New York Times</a></li>
+      <li><a id="jpost" onclick="post(this.id, 4)" class="btn">Jerusalem Post</a></li>
+      <li><a id="fox" onclick="post(this.id, 5)" class="btn">Fox News</a></li>
+      <li><a id="ynet" onclick="post(this.id, 6)" class="btn">ynet</a></li>
+      <li><a id="walla" onclick="post(this.id, 7)" class="btn">Walla</a></li>
+      <li><a id="mako" onclick="post(this.id, 8)" class="btn">Mako</a></li>
+      <li><a id="israelHayom" onclick="post(this.id, 9)" class="btn">Israel Hayom</a></li>
+      <li><a id="timesOfIsrael" onclick="post(this.id, 10)" class="btn">Times of Israel</a></li>
+      <li><a id="nana10" onclick="post(this.id, 11)" class="btn">Nana 10</a></li>
+    </ul>
+  </section>
+  <!--/ End Section A -->
+
+  <!-- Section B -->
+  <section id="section-b">
+    <div id="feed"></div>
+  </section>
+  <!--/ End Section B -->
+
+  <!-- JS Scripts -->
+  <script src="js/main.js"></script>
+  <!--/ End JS Scripts-->
+</body>
+
+</html>

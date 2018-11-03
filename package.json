@@ -1,0 +1,28 @@
+{
+  "name": "news-rss-reader",
+  "version": "1.0.0",
+  "description": "Awesome news website!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eladgubkin/news-rss-reader.git"
+  },
+  "author": "Elad Gubkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eladgubkin/news-rss-reader/issues"
+  },
+  "homepage": "https://github.com/eladgubkin/news-rss-reader#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
