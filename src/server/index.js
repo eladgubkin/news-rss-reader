@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api', (req, res) => {
-  const rssFeeds = JSON.parse(fs.readFileSync('rssFeeds.json', 'utf8'));
+  const rssFeeds = JSON.parse(fs.readFileSync('rss_feeds.json', 'utf8'));
   const name = req.body.name;
   const index = req.body.index;
 
